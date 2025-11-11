@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.number {
+  font-size: 200px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 5px white; /* outline */
+  position: relative;
+}
+
+.number::after {
+  content: "1";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black; /* inner fill color */
+  z-index: -1;
+  transform: translate(8px, 8px); /* offset shadow effect */
+}
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+</style>
+</head>
+<body>
+  Here’s a short, clean version 
+
+
+</body>
+</html>
